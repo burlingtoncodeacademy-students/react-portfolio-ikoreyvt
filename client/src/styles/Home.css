@@ -1,102 +1,69 @@
+.homeBack {
+  background-color: #222831;
+}
+
 #homeContainer {
   display: flex;
-  height: 100vh;
-  width: 100vw;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 
 #nameCard {
-  position: absolute;
   border: 4px black solid;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  width: 60vw;
+  background-color: #dddddd;
+  margin-bottom: 2rem;
+}
+
+#nameMain {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  height: 156px;
-  width: 484px;
-  background-color: aquamarine;
 }
 
 div#nameCard img {
-  width: 100px;
-  height: 156px;
-}
-
-#name {
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-#myTitle {
-  display: inline-block;
-  width:384px;
-  margin-top: 0;
-  margin-bottom: 0;
-  text-align: center;
+  float: right;
 }
 
 #contact {
-  margin-bottom: 0;
-  margin-left: 293px;
   padding: 2px;
   text-align: center;
-  width: 85px;
+  width: 10vw;
+  color: black;
   outline: 2px solid black;
-  background-color: rgb(109, 109, 235);
+  background-color: #30475e;
 }
 
-#contact:hover{
+#contact:hover {
   cursor: pointer;
-  background-color: rgb(74, 74, 233);
+  background-color: #243c53;
 }
 
-#pageCards{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  width: 800px;
-  height: 308px;
+.homeLinks {
+  width: 60vw;
 }
 
-a{
-  text-decoration: none;
-}
-
-.pageCard{
+.pageCard {
   border: 2px solid black;
-  height: 150px;
+  font-size: 2em;
+  text-align: center;
+  background-color: #f05454;
 }
 
-.pageCard:hover{
-  background-color: blue;
+.pageCard:hover {
+  background-color: #d46363;
 }
 
-#about{
-  border-top-left-radius: 10px;
+a div {
+  color: black;
 }
 
-#hobbies{
-  text-align: right;
-  border-top-right-radius: 10px;
-}
-
-#portfolio{
-  border-bottom-left-radius: 10px;
-}
-
-#work{
-  border-bottom-right-radius: 10px;
-}
-
-#portfolio h3{
-  margin-top: 105px;
-  text-decoration: none;
-}
-
-#work h3{
-  text-align: right;
-  margin-top: 105px;
-  text-decoration: none;
+@media screen and (max-width: 786px) {
+  div#nameCard img {
+    align-items: center;
+    float: none;
+  }
 }

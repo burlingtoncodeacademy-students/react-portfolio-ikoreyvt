@@ -15,19 +15,21 @@ const Contact = ({ setModalOpen }) => {
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
-    alert("Submitted!")
+    alert("Thank you for reaching out!")
     setModalOpen(false)
   };
 
   return (
     <div style={fullPage}>
+      <div className="box is-primary">
       <form id="contactForm" onSubmit={handleSubmit}>
         <input type="text" placeholder="Name..." />
-        <input type="text" placeholder="Email..." />
-        <input type="text" placeholder="What would you like to say..." />
+        <input type="email" placeholder="Email..." />
+        <textarea type="text" placeholder="What would you like to say..." />
         <input type="submit" />
       </form>
       <button onClick={() => setModalOpen(false)}>Cancel</button>
+      </div>
     </div>
   );
 };
