@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import 'bulma/css/bulma.css';
+import "bulma/css/bulma.css";
 import "./styles/Home.css";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -10,7 +10,6 @@ import WorkHistory from "./components/WorkHistory";
 import Contact from "./components/Contact";
 import { useState } from "react";
 import { Switch, Route, BrowserRouter } from "react-router-dom";
-
 
 function App() {
   const [modalOpen, setModalOpen] = useState(false);

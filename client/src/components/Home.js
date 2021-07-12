@@ -25,11 +25,7 @@ const Home = ({ setModalOpen }) => {
               </p>
             </div>
             <article className="column">
-              <img
-                src="./images/myface.png"
-                alt="itsa me!"
-                title="doggo"
-              />
+              <img src="./images/myface.png" alt="itsa me!" title="doggo" />
             </article>
           </div>
         </div>
