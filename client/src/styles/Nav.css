@@ -1,0 +1,13 @@
+#navContainer{
+position: relative; 
+height: 10vh;
+}
+
+#navLinks{
+  position: fixed;
+  height: 10vh;
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+  align-items: center;
+}
